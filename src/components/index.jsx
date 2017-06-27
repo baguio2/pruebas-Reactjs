@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import EmpleadoApp from './empleado-app'
+import Galeria from './galeria'
 
-ReactDOM.render(<EmpleadoApp />, document.getElementById('application'))
+ReactDOM.render(<Galeria />, document.getElementById('application'))

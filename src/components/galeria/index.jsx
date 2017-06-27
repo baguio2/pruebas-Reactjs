@@ -1,7 +1,7 @@
 import React from 'react'
 import GaleriaList from '../galeria-list'
 
-class GaleriaApp extends React.Component {
+class Galeria extends React.Component {
 
   constructor(props) {
     super(props)
@@ -9,7 +9,7 @@ class GaleriaApp extends React.Component {
   }
 
   componentWillMount() {
-    fetch('http://jsonplaceholder.typicode.com/photos?albumId=' + this.props.albumId)
+    fetch('http://jsonplaceholder.typicode.com/photos?albumId=' + 1)
       .then((response) => {
         return response.json()
       })
@@ -34,4 +34,4 @@ class GaleriaApp extends React.Component {
 
 }
 
-export default GaleriaApp
+export default Galeria
