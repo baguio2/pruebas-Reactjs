@@ -1,17 +1,14 @@
 import React from 'react'
 import { BroserRouter as Router, Link} from 'react-router'
 
-class EmpleadoRow extends React.Component {
+class AlbumRow extends React.Component {
 
   render() {
     return(
       <li className="media">
         <Link to="/album-list/{this.props.key}">
           <div className="media-body" >
-            <h4>{this.props.name}</h4>
-            <p>
-              {this.props.email}
-            </p>
+            <h4>{this.props.title}</h4>
           </div>
         </Link>
         <hr/>
@@ -20,4 +17,4 @@ class EmpleadoRow extends React.Component {
   }
 }
 
-export default EmpleadoRow
+export default AlbumRow
