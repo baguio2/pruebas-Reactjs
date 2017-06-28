@@ -9,7 +9,7 @@ class Galeria extends React.Component {
   }
 
   componentWillMount() {
-    fetch('http://jsonplaceholder.typicode.com/photos?albumId=' + 1)
+    fetch('http://jsonplaceholder.typicode.com/photos?albumId=' + this.props.albumId)
       .then((response) => {
         return response.json()
       })
