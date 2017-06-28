@@ -1,5 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import EmpleadoApp from './empleado-app'
+import BroserRouter from 'react-router'
+import { Router, Route, Switch } from 'react-router'
+import EmpleadoApp from '../empleado-app'
 
-ReactDOM.render(<EmpleadoApp />, document.getElementById('application'))
+//routes
+import AppRoutes from './routes'
+
+ReactDOM.render(
+    <BroserRouter>
+        <AppRoutes />
+    </BroserRouter>,
+    //<EmpleadoApp/>,
+
+    document.getElementById('application')
+)
