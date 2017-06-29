@@ -1,5 +1,5 @@
 import React from 'react'
-import { BroserRouter as Router, Link} from 'react-router'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 class AlbumRow extends React.Component {
 
