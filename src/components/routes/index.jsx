@@ -16,3 +16,12 @@ const AppRoutes = () => {
         </Switch> 
     </Router>
 }
+
+class Routes extends React.Component {
+
+  render() {
+    return AppRoutes
+  }
+}
+
+export default Routes
