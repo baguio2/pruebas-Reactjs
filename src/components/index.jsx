@@ -1,16 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BroserRouter as Router} from 'react-router'
+import { BroserRouter } from 'react-router-dom'
+import { Router, Route, Switch } from 'react-router'
 import EmpleadoApp from './empleado-app'
 
 //routes
-import AppRoutes from './routes'
+import Routes from './routes'
 
 ReactDOM.render(
-    <Router>
-        <AppRoutes />
-    </Router>,
+    <BroserRouter>
+        <Routes/>
+    </BroserRouter>,
     <EmpleadoApp/>,
-
     document.getElementById('application')
 )
